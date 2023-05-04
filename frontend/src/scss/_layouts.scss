@@ -1,0 +1,167 @@
+.nav__brand {
+  background-color: $orange !important;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.sidebar__main {
+  background-color: $darkBlue !important;
+}
+
+.sidebar__minimizer {
+  background-color: transparent !important;
+}
+
+.sidebarIcon {
+  color: $orange !important;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.search__container {
+  position: relative;
+
+  .search__results {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: $white;
+    top: 100%;
+    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+
+    li {
+      list-style: none;
+      padding: 10px 20px;
+      border-bottom: 1px solid $darkBlue;
+    }
+  }
+}
+
+.nav__search {
+  display: flex;
+  opacity: 0.5;
+  align-items: center;
+  margin-left: 20%;
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  input {
+    border: none;
+    font-size: 1.5em;
+  }
+}
+
+.form-error {
+  display: block !important;
+}
+
+.user__avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  span {
+    font-size: smaller;
+  }
+}
+
+.content__container {
+  background-color: $white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.lg__btn {
+  padding: 10px 30px !important;
+}
+
+.sm__btn {
+  padding: 5px 15px !important;
+}
+
+.orange__btn {
+  background-color: $orange !important;
+  color: $white !important;
+  &:hover {
+    background-color: $darkBlue !important;
+  }
+}
+
+.blue__btn {
+  background-color: $darkBlue !important;
+  color: $white !important;
+  &:hover {
+    background-color: $orange !important;
+  }
+}
+
+.link,
+a {
+  text-decoration: none;
+  &:hover {
+    color: $darkBlue;
+    text-decoration: none;
+  }
+  .icon {
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+.large__avatar {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.blue_bg {
+  background-color: $darkBlue !important;
+  color: aliceblue !important;
+}
+
+.blue_color {
+  color: $darkBlue !important;
+}
+
+.orange_bg {
+  background-color: $orange !important;
+}
+
+.orange_color {
+  color: $orange !important;
+}
+
+.icon .icon {
+  font-size: 5px !important;
+  height: 5px !important;
+  //border: 1px solid red;
+}
+
+.backgroundColor {
+  background-color: $background;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #section-to-print,
+  #section-to-print * {
+    visibility: visible;
+  }
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+  }
+}
+
+ul li {
+  list-style: none;
+}

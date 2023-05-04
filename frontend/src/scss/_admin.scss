@@ -1,0 +1,93 @@
+.dashboard__card {
+  background-color: $white;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  color: $black !important;
+  //justify-content: space-between;
+
+  .card__digits {
+    font-weight: 800;
+    font-size: 1.7em;
+  }
+  .card__details {
+    margin-left: 10px;
+  }
+  h5 {
+    opacity: 0.4;
+  }
+  .card__icon {
+    background-color: lightblue;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.activities__container {
+  height: 500px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: hidden;
+  }
+}
+.dashboard__attendance {
+  height: 50vh;
+}
+.notices {
+  max-height: 500;
+  min-height: 100%;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .notice {
+    padding: 20px;
+
+    .chip__date {
+      background-color: $darkBlue;
+      color: $white !important;
+    }
+  }
+}
+
+.attendances {
+  .color__box {
+    width: 100px;
+    height: 20px;
+  }
+  .male__color {
+    background: #051f3e !important;
+  }
+  .female__color {
+    background-color: #ffa201;
+  }
+}
+
+.fees {
+  font-size: 1em;
+
+  .icon {
+    width: 0.8em;
+    height: 0.8em;
+    color: red;
+    font-weight: 800;
+  }
+}
+
+.form__sender {
+  padding: 0 !important;
+
+  .header {
+    background-color: $darkBlue;
+    padding: 10px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+}

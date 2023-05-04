@@ -1,0 +1,71 @@
+.student__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .avatar {
+    font-size: 3em;
+    font-weight: 800;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.classCard {
+  background-color: #fff !important;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+
+  a {
+    color: $darkBlue !important;
+    &:hover {
+      color: $orange !important;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.009);
+  }
+
+  .icon {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+.selectBox {
+  position: relative;
+}
+.showcheckboxes {
+  display: block;
+  border: 1px #dadada solid;
+}
+
+.profileContainer {
+  position: relative;
+  .profileIcon {
+    position: absolute;
+    color: $darkBlue;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+  }
+}
+
+.profileContainer:hover .profileIcon {
+  display: block;
+}
+
+.students__container {
+  border: 1px solid #ccc;
+  width: 100%;
+
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}
